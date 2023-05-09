@@ -1,0 +1,85 @@
+.post
+    width: 100%
+    height: fit-content
+    background-color: #fff
+    border-radius: 5px
+    box-shadow: 0 0 10 0 rgba(19, 19, 31, .5)
+    display: flex
+    flex-direction: column
+    margin-top: 50px
+    transition: 0.5s ease-out
+    .meta
+        display: flex
+        justify-content: space-between
+        margin: 15px
+        margin-bottom: 0
+        @media screen and (min-width: 768px)
+        @media screen and (min-width: 1024px)
+            margin: 23px
+            margin-bottom: 0
+        .date
+            font-family: "lexend deca"
+            font-size: 14px
+            color: #717171
+            @media screen and (min-width: 768px)
+            @media screen and (min-width: 1024px)
+                font-size: 16px
+        .heartImgWrapper
+            width: 20px
+            cursor: pointer
+            @media screen and (min-width: 768px)
+            @media screen and (min-width: 1024px)
+                width: 25px
+            button[name="favoriteBTN"]
+                background: none
+                border: none
+                cursor: pointer
+                .heart
+                    width: 100%
+    .content
+        display: flex
+        flex-direction: column
+        gap: 8px
+        margin: 23px
+        .title
+            font-family: "Lexend Deca"
+            font-size: 18px
+            @media screen and (min-width: 768px)
+            @media screen and (min-width: 1024px)
+                font-size: 26px
+        .resume
+            font-family: "Lexend Deca"
+            color: #717171
+            font-size: 14px
+            @media screen and (min-width: 768px)
+            @media screen and (min-width: 1024px)
+                font-size: 18px
+    .actionsMenu
+        width: 100%
+        display: flex
+        justify-content: space-around
+        align-items: center
+        margin-bottom: 30px
+        .shadow__btn
+            padding: 10px 20px
+            border: none
+            font-size: 17px
+            color: #fff
+            border-radius: 7px
+            letter-spacing: 4px
+            font-weight: 700
+            text-transform: uppercase
+            transition: 0.5s
+            transition-property: box-shadow, opacity
+            background: rgb(0,140,255)
+            box-shadow: 0 0 25px rgb(74, 159, 255)
+            opacity: .2
+        .shadow__btn:hover
+            opacity: .7
+            cursor: pointer
+            box-shadow: 0 0 5px rgb(0,140,255)
+.post:hover
+    border: 2px solid #008bf8
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25)
+.post:last-child
+    margin-bottom: 100px

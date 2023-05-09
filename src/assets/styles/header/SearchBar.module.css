@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+.searchBar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 90%;
+  height: 50%;
+}
+@media screen and (min-width: 1024px) {
+  .searchBar {
+    width: 900px;
+    justify-content: space-between;
+  }
+}
+.searchBar .searchForm {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .searchBar .searchForm {
+    height: 48px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .searchBar .searchForm {
+    height: 65px;
+    width: 90%;
+  }
+}
+.searchBar .searchForm .input {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+  color: white;
+  padding-left: 38px;
+  font-size: 14px;
+}
+@media screen and (min-width: 768px) {
+  .searchBar .searchForm .input {
+    font-size: 16px;
+    height: 48px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .searchBar .searchForm .input {
+    font-size: 18px;
+    height: 100%;
+    padding-left: 64px;
+  }
+}
+.searchBar .searchForm .input::placeholder {
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  opacity: 0.5;
+}
+.searchBar .searchForm .loupeImgWrapper {
+  position: absolute;
+  margin-left: 9px;
+}
+@media screen and (min-width: 1024px) {
+  .searchBar .searchForm .loupeImgWrapper {
+    margin-left: 17px;
+  }
+}
+.searchBar .searchForm .loupeImgWrapper .loupeIcon {
+  width: 16px;
+}
+@media screen and (min-width: 768px) {
+  .searchBar .searchForm .loupeImgWrapper .loupeIcon {
+    width: 24px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .searchBar .searchForm .loupeImgWrapper .loupeIcon {
+    width: 32px;
+  }
+}
+.searchBar .shadow__btn {
+  display: none;
+  padding: 20px;
+  height: 65px;
+  border: none;
+  font-size: 17px;
+  color: #fff;
+  border-radius: 7px;
+  transition: 0.5s;
+  transition-property: box-shadow;
+  background: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+@media screen and (min-width: 1024px) {
+  .searchBar .shadow__btn {
+    display: inline;
+  }
+}
+.searchBar .shadow__btn p {
+  opacity: 0.5;
+}
+.searchBar .shadow__btn:hover {
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+}
+
+/*# sourceMappingURL=SearchBar.module.css.map */

@@ -1,0 +1,88 @@
+.editForm
+    margin: 50px 0
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    gap: 30px
+    width: 90%
+    box-shadow: 0 0 10 0 rgba(19, 19, 31, .5)
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, .2)
+    border-radius: 16px
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
+    backdrop-filter: blur(5px)
+    -webkit-backdrop-filter: blur(5px)
+    border: 1px solid rgba(62, 161, 219, 0.3)
+    @media screen and ( min-width: 1024px )
+        width: 900px
+    div
+        margin-top: 30px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        width: 100%
+        gap: 15px
+        label
+            color: #000
+            align-self: flex-start
+            margin-left: 10%
+            font-style: normal
+            font-weight: 400
+            font-family: 'Lexend Deca', sans-serif
+            font-size: 18px
+            @media screen and (min-width: 768px)
+                font-size: 21px
+            @media screen and (min-width: 1024px)
+                font-size: 24px
+        textarea,input
+            background: #fff
+            border-radius: 6px
+            width: 80%
+            min-height: 65px
+            outline: none
+            padding-left: 15px
+            font-size: 15px
+            color: #000
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
+            border: 2px solid black
+            border-top: 0
+            border-left: 0
+            @media screen and (min-width: 768px)
+                font-size: 18px
+            @media screen and (min-width: 1024px)
+                font-size: 21px
+        textarea,input::placeholder
+            color: #000
+            font-family: 'Inter', sans-serif
+            font-weight: 500
+            font-size: 15px
+            @media screen and (min-width: 768px)
+                font-size: 18px
+            @media screen and (min-width: 1024px)
+                font-size: 21px
+        textarea
+            padding: 20px 10px
+    .actionsMenu
+        padding-bottom: 50px
+        @media screen and (min-width: 1024px)
+            flex-direction: row
+        .shadow__btn
+            display: inline
+            width: 40%
+            height: 65px
+            border: none
+            border-radius: 7px
+            transition: 0.5s
+            transition-property: box-shadow
+            background: #fff
+            cursor: pointer
+            color: #000
+            font-family: 'Inter', sans-serif
+            font-weight: 500
+            font-size: 18px
+            box-shadow: 0 0 15px rgba(0, 0, 0, .2)
+            p
+                opacity: .5
+        .shadow__btn:hover
+            box-shadow: 0 0 5px rgba(0, 0, 0, .10)

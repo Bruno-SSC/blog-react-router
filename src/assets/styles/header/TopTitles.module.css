@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+.topTitles {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  width: 90%;
+  height: 50%;
+}
+@media screen and (min-width: 1024px) {
+  .topTitles {
+    width: 900px;
+  }
+}
+.topTitles .title {
+  align-self: center;
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 18px;
+}
+@media screen and (min-width: 768px) {
+  .topTitles .title {
+    font-size: 21px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .topTitles .title {
+    font-size: 24px;
+  }
+}
+
+/*# sourceMappingURL=TopTitles.module.css.map */

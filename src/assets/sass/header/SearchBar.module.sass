@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap')
+
+.searchBar
+    position: relative
+    display: flex
+    align-items: center
+    width: 90%
+    height: 50%
+    @media screen and (min-width: 1024px)
+        width: 900px
+        justify-content: space-between
+    .searchForm
+        height: 40px
+        width: 100%
+        display: flex
+        align-items: center
+        @media screen and (min-width: 768px)
+            height: 48px
+        @media screen and (min-width: 1024px)
+            height: 65px
+            width: 90%
+        .input
+            background: rgba(255, 255, 255, 0.2)
+            border-radius: 5px
+            width: 100%
+            height: 100%
+            outline: none
+            border: none
+            color: white
+            padding-left: 38px
+            font-size: 14px
+            @media screen and (min-width: 768px)
+                font-size: 16px
+                height: 48px
+            @media screen and (min-width: 1024px)
+                font-size: 18px
+                height: 100%
+                padding-left: 64px
+        .input::placeholder
+            color: #fff
+            font-family: 'Inter', sans-serif
+            font-weight: 500
+            opacity: .5
+        .loupeImgWrapper
+            position: absolute
+            margin-left: 9px
+            @media screen and (min-width: 1024px)
+                margin-left: 17px
+            .loupeIcon
+                width: 16px
+                @media screen and (min-width: 768px)
+                    width: 24px
+                @media screen and (min-width: 1024px)
+                    width: 32px
+    .shadow__btn
+        display: none
+        padding: 20px
+        height: 65px
+        border: none
+        font-size: 17px
+        color: #fff
+        border-radius: 7px
+        transition: 0.5s
+        transition-property: box-shadow
+        background: rgb(255, 255, 255, .2)
+        cursor: pointer
+        @media screen and (min-width: 1024px)
+            display: inline
+        p
+            opacity: .5
+    .shadow__btn:hover
+        box-shadow: 0 0 5px rgba(255, 255, 255, .2)
