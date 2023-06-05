@@ -4,7 +4,7 @@
 
 Rebuild of the previously blog I built with pure react, now with react router. Added more features and improvements. Used a few libraries like matchSorter, localforage and sortBy either but nothing worthy of mention.
 
-> [Acessar](https://rr-contacts.netlify.app)
+> [Acessar](https://blog-react-routerv6.netlify.app)
 
 <h2 align="left"> Objetivo 📌 </h2>
 
